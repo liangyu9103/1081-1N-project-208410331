@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 350px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card_image img {
+  width: 100%;
+}
+
+.card_contacts {
+  padding: 20px;
+}
+
+.card_contacts h2 {
+  margin-bottom: 20px;
+}
+
+table td {
+  padding: 5px;
+}
+
+.card_icons {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  padding: 15px;
+}
+/* Utilities */
+
+.l-grey {
+  color: #ccc;
+}
+
+.d-grey {
+  color: #999;
+}
+.pl-md {
+  padding-left: 30px;
+}

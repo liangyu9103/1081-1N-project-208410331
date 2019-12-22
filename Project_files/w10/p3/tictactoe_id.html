@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TicTacToe</title>
+  </head>
+  <style>
+    body {
+      background: #1c1b1b;
+      color: #666;
+      font-family: "Arial", sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+
+    #container {
+      width: 400px;
+      overflow: auto;
+      margin: 40px auto;
+      background: #666;
+      padding-bottom: 40px;
+      border-radius: 10px;
+    }
+
+    #board {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    #board li {
+      margin: 10px;
+      padding-top: 20px;
+      height: 70px;
+      width: 90px;
+      font-size: 48px;
+      font-weight: 800;
+      background: #333;
+      color: #ccc;
+      list-style: none;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    #board li:hover,
+    #reset:hover {
+      cursor: pointer;
+      background: #000;
+    }
+
+    #reset {
+      border: 0;
+      background: #444;
+      color: #fff;
+      width: 70%;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 25px;
+    }
+
+    .o {
+      color: green !important;
+    }
+
+    .x {
+      color: red !important;
+    }
+
+    footer {
+      display: block;
+      text-align: center;
+      padding-top: 15px;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Tic Tac Toe</h1>
+      </header>
+      <ul id="board">
+        <li class="x">X</li>
+        <li class="o">O</li>
+        <li class="x">X</li>
+        <li class="o">O</li>
+        <li class="o">O</li>
+        <li class="x">X</li>
+        <li>+</li>
+        <li class="o">O</li>
+        <li>+</li>
+      </ul>
+      <footer>
+        <button id="reset">Reset Game</button>
+      </footer>
+    </div>
+  </body>
+</html>

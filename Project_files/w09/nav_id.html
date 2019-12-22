@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nav demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      #tku_midterm {
+        margin: 10px auto;
+        padding: 20px;
+        height: 1000px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">TKU midterm-prep</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="change(1)">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="change(2)">Div Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="change(3)">Profile Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="change(4)">Landing</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="tku_midterm"></div>
+
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+      function change(index) {
+        var p = document.getElementById('tku_midterm');
+        switch (index) {
+          case 1:
+            p.innerHTML =
+              '<iframe width=100% height=100% src="./p1/index.html">';
+            break;
+          case 2:
+            p.innerHTML =
+              '<iframe width=100% height=100% src="./p2/div_id.html">';
+            break;
+          case 3:
+            p.innerHTML =
+              '<iframe width=100% height=100% src="./p3/profile_id.html">';
+            break;
+          case 4:
+            p.innerHTML =
+              '<iframe width=100% height=100% src="./p4/p4_id.html">';
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
